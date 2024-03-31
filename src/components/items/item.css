@@ -1,0 +1,19 @@
+.card_1 {
+  height: 220px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 6px;
+}
+
+.card_1 img{
+    height: 170px;
+    width: 140px;
+    border-radius: 6px;
+}
+.details p{
+    font-size: 12px;
+}

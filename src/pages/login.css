@@ -1,0 +1,130 @@
+.login_signup_form {
+    width: 300px;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgb(249,249,253);
+    background: linear-gradient(0deg, rgba(249,249,253,1) 0%, rgba(167,154,234,1) 100%);
+  }
+  .login_signup_form h2{
+     font-size: 1.3rem;
+     flex-wrap: wrap;
+  }
+  
+  .login_signup_container {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .fields input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    outline: none;
+    padding: .5rem 1rem;
+    flex-wrap: wrap;
+    font-size: .9rem;
+  }
+  
+  .fields input:focus {
+    outline: none;
+    border-color: dodgerblue;
+  }
+  
+  .login_signup_container button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(18, 18, 18);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-wrap: wrap;
+  }
+  
+  .login_signup_container button:hover {
+    background-color: dodgerblue;
+  }
+  
+  .agree_form p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: .6rem;
+    flex-wrap: wrap;
+  }
+
+  .agree_form span{
+    color: blueviolet;
+    
+  }
+  .agree_form span:hover{
+    cursor: pointer;
+  }
+  
+  /* Animation */
+  .login_signup_form {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+
+.login_signup_form {
+    animation: fadeIn 1s ease-in-out; /* Apply fade in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fields input,
+  .fields button {
+    animation: slideIn 0.5s ease-in-out; /* Apply slide in animation */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .continue-button {
+    animation: pulse 1s infinite alternate; /* Apply pulse animation */
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .login_signup_form{
+      margin-top: 8rem;
+      margin-bottom: 17rem;
+      width: 90%;
+      height: 400px;
+    }
+    .fields input{
+      margin-top: 1rem;
+      padding: 0.5rem 0rem;
+    }
+  }
