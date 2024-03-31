@@ -20,6 +20,7 @@
     margin-top: 10px;
     flex-wrap: wrap;
   }
+  
   .left_section h1 {
     flex-wrap: wrap;
   }
@@ -29,6 +30,7 @@
     justify-content: center;
     margin-top: 3rem;
   }
+  
   .right_section input {
     flex-wrap: wrap;
     padding-left: 0.5rem;
@@ -54,34 +56,23 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
+  
   .right_section button:hover {
     background-color: rgb(60, 54, 54);
     color: white;
   }
   
-  @media screen and (max-width: 480px) {
-    .left_section h1 {
-      font-size: 1.5rem;
-      margin-right: 10px;
+  @media screen and (max-width:440px) {
+    .offers_sections h1{
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+        flex-wrap: wrap;
     }
-    .left_section p {
-      margin-right: 20px;
+
+    .offers_sections p{
+        margin-right: 2rem;
     }
-  
-    .right_section input {
-      padding-left: 0.3rem;
-      padding-right: 2rem;
-      padding-top: 0.4rem;
-      padding-bottom: 0.4rem;
-    }
-  
-    .offers_sections {
-      height: 250px;
-    }
-    .right_section button{
-      padding-left: 0.3rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    padding-right: 0.2rem;
+    .right_section input{
+        padding-right: 2rem;
     }
   }
