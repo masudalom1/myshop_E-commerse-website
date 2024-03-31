@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
+  align-items: center; /* Changed align-content to align-items */
   background: rgb(249, 249, 253);
   background: linear-gradient(
     113deg,
@@ -11,6 +11,7 @@
     rgba(195, 182, 244, 1) 68%,
     rgba(164, 146, 237, 1) 100%
   );
+  margin-bottom: 0px; /* Added margin */
 }
 
 .logo {
@@ -25,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .categories li {
@@ -33,14 +35,15 @@
   margin-left: 13px;
   font-weight: 600;
   font-size: 0.8rem;
+  flex-wrap: wrap;
+  display: inline-block;
 }
 
 .login {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 20px;
+  align-items: center; /* Align items vertically */
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .login Link {
@@ -70,5 +73,27 @@
   font-size: 1.5rem;
   margin-top: 7px;
   color: black;
+}
+
+@media screen and (max-width: 420px) {
+  .categories {
+    display: block;
+    padding-right:5px ;
+    
+  }
+  .login button{
+  padding: 1px 8px;
+  }
+  .card{
+    font-size: 1.3rem;
+    margin-top: 7px;
+  }
+  .logo{
+    margin-right:0px;
+ 
+  }
+  .login{
+    margin-right: 4px;
+  }
 }
 
