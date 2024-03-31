@@ -46,4 +46,8 @@ border-radius: 6px;
     .offers_section{
         height: 240px;
     }
+    .left_offers h2{
+ font-size: 1rem;
+ margin-left: 10px;
+    }
 }
